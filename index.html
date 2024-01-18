@@ -174,16 +174,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   </model-viewer>  
  <script>
-<!--(() => {
+(() => {
   const modelViewer = document.querySelector('#paused-change-demo');
 
   self.setInterval(() => {
     modelViewer.animationName = modelViewer.animationName === 'Idle' ?
       'Tail_whip' : 'Idle';
   }, 300.0);
-})(); -->
+})();
 
-  type="module">
+<script type="module">
   const modelViewer = document.querySelector('#change-speed-demo');
   const speeds = [1, 2, 0.5, -1];
 
@@ -194,6 +194,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   };
   modelViewer.addEventListener('load', play);
   modelViewer.addEventListener('finished', play);
+</script>
   
 </script>
  </div>
