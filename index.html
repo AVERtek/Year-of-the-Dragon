@@ -205,12 +205,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      </div>
 
  <div class="card"> 
-  <model-viewer loading="eager" id="modelViewer" src="Models/DINO_900_FRAMES_100cm.glb?sound=Sound/chinese-new-year-30s.wav" scale="0.25" camera-controls interaction-prompt="none"
+  <model-viewer loading="eager" id="modelViewer" src="Models/DINO_900_FRAMES_100cm.glb?sound=Sound/chinese-new-year-30s.wav" ios-src="DINO_900_FRAMES_100cm.usdz" scale="0.25" ar camera-controls interaction-prompt="none"
   camera-orbit="90deg 0deg 100%" camera-target="0m 0m 0m" touch-action="pan-y" autoplay animation-name="" ar ar-modes="webxr scene-viewer quick-look" id="model-viewer" id="reveal" exposure="0.5" 
-  camera-controls autoplay muted playsinline ar shadow-intensity="1" ios-src="DINO_900_FRAMES_100cm.usdz" alt="Positivasaurus" auto-rotate-delay="0" ar-scale="auto" slot= "progress-bar" 
+  autoplay muted playsinline ar shadow-intensity="1" alt="Positivasaurus" auto-rotate-delay="0" ar-scale="auto" slot= "progress-bar" 
    style="z-index: 1; width: 100%; height: 600px; position: static; ">
-  <audio src="Sound/chinese-new-year-182996.mp3" autoplay></audio> 
-  
+    
   <button slot="ar-button" 
   style="z-index: 9; background-color: #BF00FF; border-radius: 8px; border: 1 px solid white; position: absolute; top: 2px; right: 0; height: 60px; width: auto; ">
    
@@ -220,7 +219,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      <img src="images/360 Images 4clr.png" alt="Year of Dragon" class="center" style="width:500px;height:800px;"> 
      </div>
      </model-viewer>  
-
+<audio id= "sudio" src="Sound/chinese-new-year-182996.mp3" autoplay></audio> 
+  
  <script>
 hotspotButton.addEventListener('click', () => {
   if (modelViewer.paused) {
