@@ -96,6 +96,33 @@ var promise = sound.play();
         sound.currentTime = time;
       }
    </script>
+
+<script>
+function Sync(selector, audioSelector) {
+  var checkExist = setInterval(function() {
+    if (document.querySelector(selector) != null) {
+      var modelViewer = document.querySelector(selector);
+      var sound = document.querySelector(audioSelector);
+
+      sound.addEventListener("timeupdate", () => {
+        modelViewer.currentTime = sound.currentTime;
+      });
+
+      var promise = sound.play();
+      if (promise !== undefined) {
+        promise
+          .then(_ => {
+            // Autoplay started!
+          })
+          .catch(error => {
+            // Autoplay was prevented. Show a "Play" button so that user can start playback.
+          });
+      }
+      clearInterval(checkExist);
+    }
+  }, 1000);
+}
+</script> 
  
 <script>
 /**
