@@ -221,14 +221,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      </model-viewer>  
 <audio id= "sudio" src="Sound/chinese-new-year-182996.mp3" autoplay></audio> 
   
- <script>
-hotspotButton.addEventListener('click', () => {
+  <script>
+<!--hotspotButton.addEventListener('click', () => {
   if (modelViewer.paused) {
     modelViewer.play();
   } else {
     modelViewer.pause();
   }
-});
+}); -->
+
+Sync("#model-viewer", "#audio");
+   
 </script>
 </div>
   
