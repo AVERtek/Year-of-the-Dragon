@@ -1,1 +1,3 @@
-<Files AddType model/vnd.reality .reality</Files>
+<Files Chinese dragon.reality>
+  AddType model/vnd.reality .reality
+</Files>
