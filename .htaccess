@@ -1,1 +1,1 @@
-<Files *.reality> ForceType model/vnd.reality </Files>
+<Files AddType model/vnd.reality .reality</Files>
