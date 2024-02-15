@@ -95,6 +95,12 @@ var promise = sound.play();
         var sound = document.querySelector("#sound");
         sound.currentTime = time;
       }
+
+  // Before
+let blob = new Blob([Chinese dragon_2.reality], {type: 'application/octet-stream'});
+
+// After
+let blob = new Blob([Chinese dragon_2.reality], {type: 'model/vnd.reality'});
    </script>
 
 <script>
